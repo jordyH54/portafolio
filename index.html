@@ -1,53 +1,153 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Portafolio Profesional</title>
-<link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
+    <title>Jordy Hernandez | Software Engineer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body>
 
-    <nav class="navbar">
-        <div class="logo">MiPortafolio</div>
+<body>
+    <div class="blob-c">
+        <div class="shape-blob one"></div>
+        <div class="shape-blob two"></div>
+        <div class="shape-blob three"></div>
+    </div>
+
+    <nav class="glass-nav">
+        <div class="logo">JORDY HERNANDEZ<span>_</span></div>
         <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#contacto">Contacto</a></li>
-            <li><a href="tu-cv.pdf" class="btn-cv" target="_blank">CV</a></li>
+            <li><a href="#home">Inicio</a></li>
+            <li><a href="#projects">Proyectos</a></li>
+            <li><a href="#skills">Stack</a></li>
+            <li><a href="#contact" class="nav-ctaa">Contáctame</a></li>
+            <a href="CV_Jordy_Hernandez.pdf" download="CV_Jordy_Hernandez.pdf" class="nav-cta">
+            <i class="fas fa-download"></i> Descargar CV
+        </a>
         </ul>
     </nav>
 
-    <section id="about" class="section">
-        <h1>Hola, soy [Tu Nombre]</h1>
-        <p>Especialista en [Tu Profesión]. Me apasiona crear soluciones innovadoras y funcionales.</p>
-    </section>
+    <header id="home" class="hero">
+        <div class="hero-text">
+            <span class="tagline">Ingeniero en Sistemas Computacionales</span>
+            <h1>Construyendo el <br><span class="gradient-text">Futuro Digital</span></h1>
+            <p>Mi objetivo es transformar ideas en código funcional. Cuento con una base técnica en lenguajes como
+                Python y Java, lo que me permite abordar problemas desde distintas perspectivas. En el lado del cliente,
+                doy vida a los proyectos mediante HTML, CSS y JavaScript, asegurando siempre una experiencia de usuario
+                fluida.</p>
 
-    <section id="portfolio" class="section">
-        <h2>Mi Portafolio</h2>
-        <div class="grid">
-            <div class="card">Proyecto 1</div>
-            <div class="card">Proyecto 2</div>
-            <div class="card">Proyecto 3</div>
+            <div class="hero-actions">
+                <a href="#projects" class="btn-main">Ver Portafolio</a>
+                <a href="https://github.com/jordy_hdez" class="btn-sec"><i class="fab fa-github"></i> GitHub</a>
+            </div>
+        </div>
+        <div class="hero-img-container">
+            <div class="img-border">
+                <img src="img/foto.jpeg" alt="Jordy Hernandez">
+            </div>
+        </div>
+    </header>
+
+    <section id="projects" class="container">
+        <h2 class="section-title">Proyectos <span>Seleccionados</span></h2>
+        <div class="project-grid">
+            <div class="p-card">
+                <div class="p-img">
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=600"
+                        alt="Data Analytics">
+                    <div class="p-type">Backend & Data</div>
+                </div>
+                <div class="p-content">
+                    <h3>Sincronizador SQL v2.0</h3>
+                    <p>Arquitectura de datos optimizada para alta disponibilidad usando SQL Server y Node.js.</p>
+                    <div class="p-tags">
+                        <span>Node.js</span><span>SQL Server</span><span>Express</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="p-card">
+                <div class="p-img">
+                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=600"
+                        alt="Web Development">
+                    <div class="p-type">Frontend</div>
+                </div>
+                <div class="p-content">
+                    <h3>Interface React Dinámica</h3>
+                    <p>Dashboard interactivo con manejo de estados complejos y animaciones fluidas.</p>
+                    <div class="p-tags">
+                        <span>React</span><span>Framer Motion</span><span>API</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="p-card">
+                <div class="p-img">
+                    <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&q=80&w=600"
+                        alt="Software Engineering">
+                    <div class="p-type">Full-Stack</div>
+                </div>
+                <div class="p-content">
+                    <h3>Core de Gestión Py</h3>
+                    <p>Sistema modular desarrollado en Python para automatización de procesos industriales.</p>
+                    <div class="p-tags">
+                        <span>Python</span><span>PostgreSQL</span><span>Docker</span>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
-    <section id="skills" class="section">
-        <h2>Habilidades</h2>
-        <div class="skills-container">
-            <span>HTML/CSS</span>
-            <span>JavaScript</span>
-            <span>UI/UX</span>
-            <span>Estrategia Digital</span>
+    <section id="skills" class="container">
+        <h2 class="section-title">Mi <span>Tech Stack</span></h2>
+        <div class="skills-wrapper">
+            <div class="skill-group">
+                <h3><i class="fas fa-terminal"></i> Desarrollo Core</h3>
+                <div class="skills-list">
+                    <div class="skill-tag">JavaScript (ES6+)</div>
+                    <div class="skill-tag">Node.js</div>
+                    <div class="skill-tag">Java</div>
+                    <div class="skill-tag">Python</div>
+                    <div class="skill-tag">C</div>
+                </div>
+            </div>
+
+            <div class="skill-group">
+                <h3><i class="fas fa-layer-group"></i> Frontend & Web</h3>
+                <div class="skills-list">
+                    <div class="skill-tag">HTML5 / CSS3</div>
+                    <div class="skill-tag">React.js</div>
+                    <div class="skill-tag">Responsive Design</div>
+                </div>
+            </div>
+
+            <div class="skill-group">
+                <h3><i class="fas fa-database"></i> Bases de Datos & Tools</h3>
+                <div class="skills-list">
+                    <div class="skill-tag">SQL Server</div>
+                    <div class="skill-tag">MySQL</div>
+                    <div class="skill-tag">MariaDB</div>
+                    <div class="skill-tag">Git / GitHub</div>
+                </div>
+            </div>
         </div>
     </section>
 
-    <section id="contacto" class="section">
-        <h2>Contacto</h2>
-        <p>¿Tienes un proyecto en mente? Escríbeme a: <strong>correo@ejemplo.com</strong></p>
-    </section>
-
+    <footer id="contact">
+        <div class="footer-glass">
+            <h2>¿Iniciamos un proyecto?</h2>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="mailto:jordy@example.com"><i class="fas fa-envelope"></i></a>
+            </div>
+            <p>© 2026 Jordy Hernandez — Diseñado para el impacto.</p>
+        </div>
+    </footer>
 </body>
+
 </html>
