@@ -96,7 +96,7 @@ h2 {
 .nav-links a {
     text-decoration: none;
     color: var(--text-dim);
-    font-size: 0.6rem;/*letras navbar*/
+    font-size: 0.8rem;/*letras navbar*/
     transition: 0.3s;
 }
 
@@ -264,7 +264,7 @@ h2 {
 
 .p-content p {
     color: var(--text-dim);
-    font-size: 0.95rem;
+    font-size: 0.65rem;
     margin-bottom: 20px;
 }
 
