@@ -336,12 +336,14 @@ footer {
 
 @media (max-width: 900px) {
     .hero {
+        /* Empuja el contenido hacia abajo para que no lo tape el nav */
+        padding-top: 100px; 
+        
         flex-direction: column;
         text-align: center;
-        justify-content: center;
-        padding-top: 100px;
+        height: auto; /* Cambia de 100vh a auto para que el contenido respire */
     }
-
+}
     .hero-text h1 {
         font-size: 3rem;
     }
@@ -355,7 +357,7 @@ footer {
         width: 280px;
         height: 280px;
     }
-}
+
 
 /* --- SKILLS SECTION STYLES --- */
 .skills-wrapper {
@@ -430,9 +432,6 @@ footer {
 
 
 
-
-
-
 /*! Estilo para el botón de CV en el Navbar */
 .nav-cta {
     background: transparent;
@@ -499,3 +498,4 @@ footer {
         font-size: 1.2rem; /* Aumentamos el tamaño en móvil para que se pueda tocar con el dedo */
     }
 }
+
