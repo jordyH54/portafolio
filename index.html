@@ -27,6 +27,9 @@
 
     <nav class="glass-nav">
         <div class="logo">JORDY HERNANDEZ<span>_</span></div>
+        <button class="menu-toggle" id="mobile-menu">
+            <i class="fas fa-bars"></i>
+        </button>
         <ul class="nav-links">
             <li><a href="#home">Inicio</a></li>
             <li><a href="#projects">Proyectos</a></li>
@@ -107,8 +110,7 @@
 
             <div class="p-card">
                 <div class="p-img">
-                    <img src="img/Artesanias.jpeg"
-                        alt="Software Engineering">
+                    <img src="img/Artesanias.jpeg" alt="Software Engineering">
                     <div class="p-type">Full-Stack</div>
                 </div>
                 <div class="p-content">
@@ -175,6 +177,28 @@
             <p>© 2026 Jordy Hernandez — Diseñado para el impacto.</p>
         </div>
     </footer>
+
+
+    <script>
+    const menuToggle = document.getElementById('mobile-menu');
+    const navLinks = document.getElementById('nav-list');
+
+    menuToggle.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+        
+        // Opcional: Cambia el icono de barras a una 'X'
+        const icon = menuToggle.querySelector('i');
+        icon.classList.toggle('fa-bars');
+        icon.classList.toggle('fa-times');
+    });
+
+    // Cerrar el menú al hacer clic en un enlace
+    document.querySelectorAll('.nav-links a').forEach(link => {
+        link.addEventListener('click', () => {
+            navLinks.classList.remove('active');
+        });
+    });
+</script>
 </body>
 
 </html>

@@ -461,3 +461,41 @@ footer {
 .nav-cta i {
     font-size: 0.8rem;
 }
+
+
+/*!boton hamburgesa en navbar*/
+/* Estilo inicial del botón (oculto en PC) */
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: var(--accent);
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* Reglas para móviles */
+@media (max-width: 900px) {
+    .menu-toggle {
+        display: block; /* Aparece el botón */
+    }
+
+    .nav-links {
+        position: fixed;
+        top: 80px; /* Debajo del nav */
+        right: -100%; /* Oculto a la derecha */
+        flex-direction: column;
+        background: var(--glass);
+        backdrop-filter: blur(20px);
+        width: 100%;
+        height: calc(100vh - 80px);
+        gap: 30px;
+        padding: 50px;
+        transition: 0.4s ease-in-out;
+    }
+
+    /* Clase que activaremos con JS */
+    .nav-links.active {
+        right: 0;
+    }
+}
