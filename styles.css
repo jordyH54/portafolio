@@ -288,6 +288,10 @@ footer {
     text-align: center;
 }
 
+.footer-text {
+    text-align: center;
+}
+
 .footer-glass {
     background: var(--glass);
     padding: 60px;
