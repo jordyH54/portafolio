@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
     
-    // --- LÓGICA DEL MENÚ HAMBURGUESA ---
+    //   MENÚ HAMBURGUESA 
     const menuToggle = document.getElementById('mobile-menu');
     const navLinks = document.getElementById('nav-list');
 
@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // --- TU LÓGICA DE ANIMACIÓN (IntersectionObserver) ---
+    //  LÓGICA DE ANIMACIÓN (IntersectionObserver) 
     const observerOptions = { threshold: 0.1 };
 
     const observer = new IntersectionObserver((entries) => {
@@ -37,7 +37,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }, observerOptions);
 
-    // Cambié '.section' por 'section' para que detecte tus etiquetas <section>
     document.querySelectorAll('section, header').forEach(sec => {
         sec.style.opacity = "0";
         sec.style.transform = "translateY(30px)";
