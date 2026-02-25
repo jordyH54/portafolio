@@ -134,7 +134,7 @@ h2 {
     letter-spacing: 3px;
 }
 
-/* Busca esto alrededor de la línea 118 */
+
 .hero-text h1 {
     font-size: 2.5rem; /* tamaño de los h1*/
     line-height: 1;
@@ -345,7 +345,7 @@ footer {
         
         flex-direction: column;
         text-align: center;
-        height: auto; /* Cambia de 100vh a auto para que el contenido respire */
+        height: auto; 
     }
 }
     .hero-text h1 {
@@ -363,7 +363,7 @@ footer {
     }
 
 
-/* --- SKILLS SECTION STYLES --- */
+/*  SKILLS SECTION STYLES  */
 .skills-wrapper {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -423,7 +423,7 @@ footer {
     transform: translateY(-3px);
 }
 
-/* Ajuste adicional para el título de sección si no lo tenías */
+/* Ajuste adicional para el título */
 .section-title {
     font-size: 2.8rem;
     margin-bottom: 50px;
@@ -475,7 +475,7 @@ footer {
 }
 @media (max-width: 900px) {
     .menu-toggle {
-        display: block; /* Ahora sí se ve el botón */
+        display: block; /* visibilidad botón */
         z-index: 1001;
     }
 
@@ -483,9 +483,9 @@ footer {
         position: fixed;
         top: 0;
         right: -100%; 
-        width: 80%; /* Un poco más ancho para móviles */
+        width: 80%; /* ancho móviles */
         height: 100vh;
-        background: rgba(5, 7, 10, 0.95); /* Más oscuro para que se lea bien */
+        background: rgba(5, 7, 10, 0.95); 
         backdrop-filter: blur(20px);
         flex-direction: column;
         justify-content: center;
@@ -503,3 +503,15 @@ footer {
     }
 }
 
+/*! --- AJUSTE RESPONSIVO PARA EL TÍTULO h1I NNOVACIÓN ENCADA COMMIT -M"" */
+@media (max-width: 768px) {
+    .hero-text h1 {
+        font-size: 1.9rem !important; /*tamaño en móviles */
+        line-height: 1.2;            /* espacio entre líneas */
+        letter-spacing: 1px;         /* espacio entre letras */
+    }
+
+    .hero-text h1 br {
+        display: block; /* Mantiene el salto de línea igual que en PC */
+    }
+}
